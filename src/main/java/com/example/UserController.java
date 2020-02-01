@@ -9,7 +9,9 @@ public class UserController {
 
     /* Maps to all HTTP actions by default (GET,POST,..)*/
     @RequestMapping("/users")
-    public @ResponseBody String getUsers() {
+ public @ResponseBody String getUsers() {
+
+ // public  String getUsers() {
         return "{\"users\":[{\"firstname\":\"Richard\", \"lastname\":\"Feynman\"}," +
                 "{\"firstname\":\"Marie\",\"lastname\":\"Curie\"}]}";
     }
